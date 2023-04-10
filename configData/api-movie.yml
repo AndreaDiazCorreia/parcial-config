@@ -2,7 +2,7 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 spring:
   application:
-    name: movie-service
+    name: api-movie
 
   rabbitmq:
     username: guest
@@ -25,7 +25,7 @@ spring:
 
 info:
   application:
-    name: movie-service
+    name: api-movie
 
 eureka:
   instance:
@@ -35,4 +35,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
